@@ -8,9 +8,17 @@ const ganttProps : BryntumGanttProps = {
     barMargin  : 10,
 
     project : {
+        taskStore : {
+            autoTree          : true,
+            transformFlatData : true
+        },
+        // specify data source
         transport : {
             load : {
-                url : 'data.json'
+                url : 'https://localhost:8010/data'
+            },
+            sync : {
+                url : 'https://localhost:8010/api'
             }
         },
         autoLoad           : true,
