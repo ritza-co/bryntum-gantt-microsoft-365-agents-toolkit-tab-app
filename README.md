@@ -11,7 +11,8 @@ description: A Hello World app of Microsoft Teams Tab app which has a backend se
 extensions:
   createdDate: "2021-11-30"
 ---
-# Getting Started with Hello World Tab with Backend Sample (Azure)
+
+# Bryntum Gantt Tab app with Express backend
 
 Microsoft Teams supports the ability to run web-based UI inside "custom tabs" that users can install either for just themselves (personal tabs) or within a team or group chat context.
 

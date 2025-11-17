@@ -15,7 +15,7 @@ const ganttProps : BryntumGanttProps = {
         // specify data source
         transport : {
             load : {
-                url : 'https://localhost:8010/data'
+                url : 'data.json'
             },
             sync : {
                 url : 'https://localhost:8010/api'
@@ -24,7 +24,9 @@ const ganttProps : BryntumGanttProps = {
         autoLoad           : true,
         // Automatically introduces a `startnoearlier` constraint for tasks that (a) have no predecessors, (b) do not use
         // constraints and (c) aren't `manuallyScheduled`
-        autoSetConstraints : true
+        autoSetConstraints : true,
+        autoSync           : true,
+        validateResponse   : true
     }
 };
 
